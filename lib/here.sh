@@ -6,5 +6,5 @@
     && sed -i s@^REPO=.\*@REPO=`pwd`@ "$PROFILE" \
     || echo REPO=`pwd` >> "$PROFILE"
 
-$GZEN info "gzen REPO set to "`pwd` &
+$GZEN info "gzen repo dir updated to:\n\n"`pwd` &
 
