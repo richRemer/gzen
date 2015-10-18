@@ -26,7 +26,7 @@ case $ACTION in
     reset)      $GZEN git reset HEAD `xclip -o`     ;;
     checkout)   $GZEN git checkout -- `xclip -o`    ;;
     commit)     $GZEN git commit -m"$MSG"           ;;
-    difftool)   $GZEN git difftool -y --dir-tool    ;;
+    difftool)   $GZEN git difftool -y --dir-diff    ;;
     push)       $GZEN git push origin HEAD          ;;
     pull)       $GZEN git pull origin HEAD          ;;
 esac
